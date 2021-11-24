@@ -16,6 +16,70 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        padding: 0 70px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        /* margin: auto; */
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      section {
+        padding: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+
+      section img {
+        border-radius: 50%;
+      }
+
+      section > div {
+        display: flex;
+      }
+
+      section > div strong {
+        display: block;
+      }
+
+      section > div div {
+        margin-left: 10px;
+      }
+
+      .section-1 {
+        grid-column: 1/3;
+      }
+
+      .section-2 {
+      }
+
+      .section-3 {
+      }
+
+      .section-4 {
+        grid-column: 2/4;
+      }
+      .section-5 {
+        grid-column: 4/5;
+        grid-row: 1/3;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -27,7 +91,7 @@
   </head>
   <body>
     <main>
-      <section>
+      <section class="section-1">
         <div>
           <img src="./images/image-daniel.jpg" alt="Daniel photo" />
           <div>
@@ -50,7 +114,7 @@
           a Software Engineer at a VR startup. ”
         </p>
       </section>
-      <section>
+      <section class="section-2">
         <div>
           <img src="./images/image-jonathan.jpg" alt="Jonathan photo" />
           <div>
@@ -65,7 +129,7 @@
           investments I’ve made in myself. ”
         </p>
       </section>
-      <section>
+      <section class="section-3">
         <div>
           <img src="./images/image-jeanette.jpg" alt="Jeannette Photo" />
           <div>
@@ -79,7 +143,7 @@
           enjoy, and make a good living while doing something I love. ”
         </p>
       </section>
-      <section>
+      <section class="section-4">
         <div>
           <img src="./images/image-patrick.jpg" alt="Patrick photo" />
           <div>
@@ -101,7 +165,7 @@
           people. ”
         </p>
       </section>
-      <section>
+      <section class="section-5">
         <div>
           <img src="./images/image-kira.jpg" alt="Kira photo" />
           <div>
