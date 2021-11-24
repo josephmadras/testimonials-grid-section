@@ -16,6 +16,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600&display=swap");
       * {
         margin: 0;
         padding: 0;
@@ -25,13 +26,11 @@
       body {
         display: flex;
         flex-direction: column;
-        /* padding: 0 200px; */
         justify-content: center;
         align-items: center;
         height: 100vh;
         font-size: 13px;
-
-        /* margin: auto; */
+        font-family: "Barlow Semi Condensed", sans-serif;
       }
 
       main {
@@ -101,6 +100,17 @@
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+
+      @media screen and (max-width: 767px) {
+        body {
+          height: 100%;
+          padding: 50px 0;
+        }
+        main {
+          display: flex;
+          flex-direction: column;
+        }
       }
     </style>
   </head>
